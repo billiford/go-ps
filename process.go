@@ -7,6 +7,8 @@
 // are interested.
 package ps
 
+//go:generate go run github.com/maxbrunsfeld/counterfeiter/v6 . Process
+
 // Process is the generic interface that is implemented on every platform
 // and provides common operations for processes.
 type Process interface {
