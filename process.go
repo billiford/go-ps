@@ -32,6 +32,7 @@ type Ps interface {
 	FindProcess(pid int) (Process, error)
 }
 
+
 func New() Ps {
 	return &ps{}
 }
